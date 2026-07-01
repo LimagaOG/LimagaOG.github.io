@@ -10,11 +10,13 @@
         h1 { margin: 0; font-size: 2.8em; color: #ffffff; text-shadow: 2px 2px #0a0c0e; }
         header p { font-size: 1.1em; color: #ffffff; font-weight: bold; }
         .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; max-width: 1100px; margin: 0 auto; }
-        .game-card { background-color: #14181c; border: 2px solid #ff003c; border-radius: 12px; width: 300px; padding: 25px; box-shadow: 0 8px 16px rgba(0,0,0,0.6); }
-        .game-card h3 { color: #00ff66; margin-top: 0; font-size: 1.6em; text-transform: uppercase; }
-        .game-card p { font-size: 0.95em; color: #ffffff; min-height: 60px; line-height: 1.5; }
-        .btn { display: inline-block; background-color: #00ff66; color: #000000; padding: 12px 24px; font-weight: bold; text-decoration: none; border-radius: 6px; margin-top: 15px; width: 80%; text-transform: uppercase; border: 2px solid #ffffff; }
-        .btn:hover { background-color: #ffffff; color: #ff003c; border-color: #00ff66; box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); }
+        .folder-card { background-color: #14181c; border: 3px dashed #00ff66; border-radius: 12px; width: 340px; padding: 35px; box-shadow: 0 8px 16px rgba(0,0,0,0.6); transition: transform 0.2s; }
+        .folder-card:hover { transform: scale(1.03); }
+        .folder-icon { font-size: 4em; margin-bottom: 10px; display: inline-block; }
+        .folder-card h2 { color: #ffffff; margin-top: 0; font-size: 2em; text-transform: uppercase; letter-spacing: 1px; }
+        .folder-card p { font-size: 1em; color: #b0bac5; min-height: 50px; line-height: 1.5; }
+        .btn-enter { display: inline-block; background-color: #00ff66; color: #000000; padding: 14px 28px; font-weight: bold; text-decoration: none; border-radius: 6px; margin-top: 15px; width: 85%; text-transform: uppercase; border: 2px solid #ffffff; font-size: 1.1em; }
+        .btn-enter:hover { background-color: #ffffff; color: #ff003c; border-color: #00ff66; box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); }
     </style>
 </head>
 <body>
@@ -25,25 +27,12 @@
     </header>
 
     <div class="container">
-        <!-- Card 1: 2D Series -->
-        <div class="game-card">
-            <h3>GTA 2D SERIES</h3>
-            <p>Classic top-down universe. Features GTA 1, GTA 2, London 1969, and London 1961 heavily compressed with modern OS fixes.</p>
-            <a href="gta-classic.html" class="btn">View Downloads</a>
-        </div>
-
-        <!-- Card 2: Stories Series -->
-        <div class="game-card">
-            <h3>GTA STORIES SERIES</h3>
-            <p>Vice City Stories & Liberty City Stories. Pre-configured smooth emulator configurations optimized heavily for low-end PCs.</p>
-            <a href="gta-stories.html" class="btn">View Downloads</a>
-        </div>
-
-        <!-- Card 3: Handheld Series -->
-        <div class="game-card">
-            <h3>GTA HANDHELD SERIES</h3>
-            <p>Chinatown Wars and GTA Advance collection. Extremely optimized portable standalone files ready to plug and play.</p>
-            <a href="gta-handheld.html" class="btn">View Downloads</a>
+        <!-- Master Folder Card -->
+        <div class="folder-card">
+            <span class="folder-icon">📁</span>
+            <h2>GTA (PC)</h2>
+            <p>Click inside to explore all low-end optimized editions including 2D Series, 3D Stories, and Handheld mod packs.</p>
+            <a href="gta-pc.html" class="btn-enter">Open Folder</a>
         </div>
     </div>
 
